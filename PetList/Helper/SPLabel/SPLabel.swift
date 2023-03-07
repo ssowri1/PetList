@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// SP stands for Sepia Pets
 class SPLabel: UILabel {
 
     var size: CGFloat = FontSizes.body.rawValue
