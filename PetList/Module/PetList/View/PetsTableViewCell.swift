@@ -27,13 +27,29 @@ class PetsTableViewCell: UITableViewCell {
         }
     }
     
+    override var accessibilityElements: [Any]? {
+        set {}
+        get {
+            return [self.icon as Any, self.name as Any]
+        }
+    }
+    
     var data: Pet? {
         didSet {
             if let data = data {
                 name.text = data.title
                 icon.imageFromURL(data.imageURL, placeHolder: placeHolderIcon)
+//                applyAccessibility(data.title)
             }
         }
+    }
+    
+    private func applyAccessibility(_ name: String) {
+        self.icon.isAccessibilityElement = true
+        self.icon.accessibilityValue = name + AppGeneral.PetList.image
+        self.name.isAccessibilityElement = true
+        self.name.accessibilityLabel = AppGeneral.PetList.petName
+        self.name.accessibilityValue = name
     }
 }
 

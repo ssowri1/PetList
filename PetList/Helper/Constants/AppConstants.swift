@@ -16,6 +16,8 @@ struct AppGeneral {
         static let thanksAlert = "Thanks for your Patient!"
         static let thanksMessage = "For smooth process please utilies our features on working hours"
         static let photoArt = "photo.artframe"
+        static let petName = "Pet Name"
+        static let image = "image"
     }
     
     // Number
