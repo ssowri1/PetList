@@ -20,6 +20,10 @@ struct AppGeneral {
         static let image = "image"
     }
     
+    struct FileName {
+        static let petList = "pets_list"
+        static let config = "config"
+    }
     // Number
     static let numberOfSection = 1
     static let heightOfCell: CGFloat = 80

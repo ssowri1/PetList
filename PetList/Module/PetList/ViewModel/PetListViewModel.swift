@@ -27,7 +27,7 @@ class PetListViewModel {
      */
     func fetch(closureHandler: @escaping() -> Void) {
         Task {
-            petList = try loder.loadBundledContent(fromFileNamed: "pets_list")
+            petList = try loder.loadBundledContent(fromFileNamed: AppGeneral.FileName.petList)
             closureHandler()
         }
     }
@@ -38,7 +38,7 @@ class PetListViewModel {
      */
     func fetchWorkingHours(closureHandler: @escaping(Bool) -> Void) {
         Task {
-            let setting: SettingsModel = try loder.loadBundledContent(fromFileNamed: "config")
+            let setting: SettingsModel = try loder.loadBundledContent(fromFileNamed: AppGeneral.FileName.config)
             let response = setting.settings.workHours
             DateConfigurator.checkEligibleForWorkingHours(response: response) { status in
                 closureHandler(status)
