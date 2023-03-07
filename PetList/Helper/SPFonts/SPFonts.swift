@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// SP stands for Sepia Pets
 public struct SPFonts {
     enum KohinoorDevanagari: String {
         case Regular = "KohinoorDevanagari-Regular"
