@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00740C7229B79D880096A220 /* PetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00740C7129B79D880096A220 /* PetDetailView.swift */; };
+		00740C7529B79DC30096A220 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00740C7429B79DC30096A220 /* WebView.swift */; };
 		00ED53BF29B7855C00A9F435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED53BE29B7855C00A9F435 /* AppDelegate.swift */; };
 		00ED53C129B7855C00A9F435 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED53C029B7855C00A9F435 /* SceneDelegate.swift */; };
 		00ED53C329B7855C00A9F435 /* PetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ED53C229B7855C00A9F435 /* PetsViewController.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00740C7129B79D880096A220 /* PetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailView.swift; sourceTree = "<group>"; };
+		00740C7429B79DC30096A220 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		00ED53BB29B7855C00A9F435 /* PetList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ED53BE29B7855C00A9F435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00ED53C029B7855C00A9F435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00740C6F29B79D520096A220 /* PetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				00740C7329B79D9C0096A220 /* WebView */,
+				00740C7029B79D5B0096A220 /* PetDetailView */,
+			);
+			path = PetDetail;
+			sourceTree = "<group>";
+		};
+		00740C7029B79D5B0096A220 /* PetDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				00740C7129B79D880096A220 /* PetDetailView.swift */,
+			);
+			path = PetDetailView;
+			sourceTree = "<group>";
+		};
+		00740C7329B79D9C0096A220 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				00740C7429B79DC30096A220 /* WebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		00ED53B229B7855C00A9F435 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +197,7 @@
 		00ED53EE29B7875300A9F435 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				00740C6F29B79D520096A220 /* PetDetail */,
 				00ED53EF29B7875B00A9F435 /* PetList */,
 			);
 			path = Module;
@@ -503,10 +533,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ED541B29B78C4400A9F435 /* DateConfigurator.swift in Sources */,
+				00740C7229B79D880096A220 /* PetDetailView.swift in Sources */,
 				00ED542A29B78DAF00A9F435 /* SPFonts.swift in Sources */,
 				00ED53C329B7855C00A9F435 /* PetsViewController.swift in Sources */,
 				00ED542729B78D6200A9F435 /* StringProtocol.swift in Sources */,
 				00ED542129B78CB600A9F435 /* UIView+extension.swift in Sources */,
+				00740C7529B79DC30096A220 /* WebView.swift in Sources */,
 				00ED540C29B7894800A9F435 /* AppConstants.swift in Sources */,
 				00ED540829B7890500A9F435 /* PetsTableViewCell.swift in Sources */,
 				00ED53FE29B7887100A9F435 /* ContentLoader.swift in Sources */,

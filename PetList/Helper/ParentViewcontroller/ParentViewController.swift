@@ -11,6 +11,8 @@ import SwiftUI
 class ParentViewController: UIViewController, Alertable {
     
     func navigate(_ pet: Pet) {
-        
+        let petDetail = UIHostingController(rootView: PetDetailView(navigationController: self.navigationController,
+                                                                    pet: pet))
+        self.navigationController?.pushViewController(petDetail, animated: true)
     }
 }
